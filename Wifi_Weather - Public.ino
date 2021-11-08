@@ -91,10 +91,12 @@ void LoginQuery()
   Snet = Serial.parseInt();
   
   Serial.println(Snet);
-  ssid = (WiFi.SSID(Snet));
-  Serial.printf("You have selected : %s \n", ssid);
-  Serial.printf("What is the password for the %s network? \n", ssid);
-  delay(1000);
+  ssid = WiFi.SSID(Snet);
+  Serial.printf("You have selected : ");
+  Serial.println(ssid);
+  Serial.printf("What is the password for ");
+  Serial.println(ssid);
+
   
   while(Serial.available() == 0){}
   pass = Serial.readStringUntil('\n');
