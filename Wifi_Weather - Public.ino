@@ -17,7 +17,7 @@
 
 // Just using this library for unix time conversion
 
-#define TIME_OFFSET -25,200,000 // UTC + 0 hour
+#define TIME_OFFSET -28800 // UTC + 0 hour
 
   String api_key = "Not today hacker person";
   String language = "en";
